@@ -1,3 +1,8 @@
 启动命令：
 node server.js 8888
 进入浏览器在地址后加 /index.html
+
+
+main.js 的第五行，添加同步说明。
+request.open("GET", src);   //     AJAX改为同步只需要加个false，默认为true（异步） 
+//request.open("GET", src, false);  就能体验卡到爆炸的感觉。记住永远不要用同步，除非特殊需求。
